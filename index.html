@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		table {
+  		background-color: #fffff1;
+  		transition: 5s;
+
+  	}
+
+  	#contain{
+  		color: #000;
+  		font-family: arial, helvetica, sans-serif;
+  		font-weight: bolder;
+  		font-size: 14px;
+  		transition: 1s;
+      padding: 5px;
+      border-radius: 4px;
+
+  	}
+  	 .light{
+      color: #fff;
+      font-family: arial, helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: 14px;
+      transition: 1s;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    td {
+    	width:20px;
+    	border-spacing: 30px;
+    }
+	</style>
+</head>
+<body>
+
+ <script type="text/javascript">
+  	
+        window.setInterval(function(){
+        	var randomColor = '#' + ('000000' + 
+        		Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+        		$('span').css({
+        			'background-color' : randomColor,
+        		});   		
+        }, 2000);
+  </script>
+   <div class="table-responsive" id="contain">
+<table class="table table-bordered" width="40px" align="center">
+	<thead>
+	<tr>
+		<th>
+			Name
+		</th>
+		<th>
+			Surname
+		</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>
+		<span class="light">solomon </span>
+		</td>
+				<td>
+		<span  class="light">	kitti </span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+	<span  class="light">		John </span>
+		</td>
+				<td>
+		<span  class="light">	Adaji </span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+	<span  class="light">		David </span>
+		</td>
+				<td>
+		<span  class="light">	Haruna </span>
+		</td>
+	</tr>
+</tbody>
+
+</table>
+</div>
+
+ <script src="js/jquery.min.js"></script>
+</body>
+</html>
